@@ -19,7 +19,7 @@ La oss ta `vcard:Organization` til eksempel fra data-organization.xlsx
 | URI   | NAME                    | EMAIL                 |
 | ex:Tolletaten | Tolletaten@@nb | Norwegian Customs Authority@@en | postmottak@toll.no |
 
-På toppen av hvert Excel-dokument er det deklarert ei liste med prefikser, så følger tabellen vi ser over.
+På toppen av hvert Excel-dokument er det deklarert ei liste med prefikser (som er strøket i dette markdown-eksempelet), så følger tabellen vi ser over.
 
 - Første rad presiserer hvilken mal (OTTR template) vi skal instansiere data mot.
 - Andre rad er nummer på parameter.
