@@ -3,7 +3,7 @@ name: Validate SHACL with Pytest
 on:
   push:
     paths:
-      - "nodeset/*"
+      - "examples/*"
 
 jobs:
   build:
