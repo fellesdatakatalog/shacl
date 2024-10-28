@@ -1,0 +1,126 @@
+@prefix cpsvno: <https://data.norge.no/vocabulary/cpsvno#> .
+@prefix o-rdf: <http://tpl.ottr.xyz/rdf/0.1/> .
+@prefix o-rdfs: <http://tpl.ottr.xyz/rdfs/0.2/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skosno: <http://data.norge.no/skosno#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix o-skosno: <https://data.norge.no/tpl/skosno#> .
+@prefix cv: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix o-owl-dec: <http://tpl.ottr.xyz/owl/declaration/0.1/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix ottr: <http://ns.ottr.xyz/0.4/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix cpsv: <http://purl.org/vocab/cpsv#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://example.org/Tollkontroll>
+        rdf:type            skos:Concept ;
+        skos:definition     "Dette er en definisjon"@nb ;
+        dcat:contactPoint   <http://example.org/Tolletaten_Kontakt> ;
+        dct:publisher       <http://example.org/Tolletaten> ;
+        skos:prefLabel      "Kontroll av ulovlig inn- eller utførsel av varer"@nb ;
+        skos:prefLabel      "Kontroll av ulovleg inn- eller utføring av varer"@nn ;
+        euvoc:xIDefinition  <http://example.org/Tollkontroll_Def1> ;
+        dct:identifier      <https://begrepskatalog.demo.fellesdatakatalog.digdir.no/555111097/f3274666-cce4-408f-ad2a-1569d242d136> .
+
+<http://example.org/Deklarasjonspliktig>
+        rdf:type           skos:Concept ;
+        skos:definition    "Dette er en definisjon"@nb ;
+        dcat:contactPoint  <http://example.org/Tolletaten_Kontakt> ;
+        dct:publisher      <http://example.org/Tolletaten> ;
+        skos:prefLabel     "Deklarasjonspliktig"@nb ;
+        dct:identifier     <https://begrepskatalog.demo.fellesdatakatalog.digdir.no/555111097/f3274666-cce4-408f-ad2a-1569d242d136> .
+
+<http://example.org/Deklarasjon>
+        rdf:type           skos:Concept ;
+        skos:definition    "Dette er en definisjon"@nb ;
+        dcat:contactPoint  <http://example.org/Tolletaten_Kontakt> ;
+        dct:publisher      <http://example.org/Tolletaten> ;
+        skos:prefLabel     "Deklarasjon"@nb ;
+        dct:identifier     <https://begrepskatalog.demo.fellesdatakatalog.digdir.no/555111097/f3274666-cce4-408f-ad2a-1569d242d137> .
+
+<http://example.org/Fartøy>
+        rdf:type           skos:Concept ;
+        skos:definition    "Dette er en definisjon"@nb ;
+        dcat:contactPoint  <http://example.org/Tolletaten_Kontakt> ;
+        dct:publisher      <http://example.org/Tolletaten> ;
+        skos:prefLabel     "Fartøy"@nb ;
+        dct:identifier     <https://begrepskatalog.demo.fellesdatakatalog.digdir.no/555111097/f3274666-cce4-408f-ad2a-1569d242d138> .
+
+<http://example.org/Fører>
+        rdf:type           skos:Concept ;
+        skos:definition    "Dette er en definisjon"@nb ;
+        dcat:contactPoint  <http://example.org/Tolletaten_Kontakt> ;
+        dct:publisher      <http://example.org/Tolletaten> ;
+        skos:prefLabel     "Fører"@nb ;
+        skos:prefLabel     "Führer"@de ;
+        dct:identifier     <https://begrepskatalog.demo.fellesdatakatalog.digdir.no/555111097/f3274666-cce4-408f-ad2a-1569d242d139> .
+
+<http://example.org/Innførsel>
+        rdf:type           skos:Concept ;
+        skos:definition    "Dette er en definisjon"@nb ;
+        dcat:contactPoint  <http://example.org/Tolletaten_Kontakt> ;
+        dct:publisher      <http://example.org/Tolletaten> ;
+        skos:prefLabel     "Innførsel"@nb ;
+        dct:identifier     <https://begrepskatalog.demo.fellesdatakatalog.digdir.no/555111097/f3274666-cce4-408f-ad2a-1569d242d140> .
+
+<http://example.org/Luftfartøy>
+        rdf:type           skos:Concept ;
+        skos:definition    "Dette er en definisjon"@nb ;
+        dcat:contactPoint  <http://example.org/Tolletaten_Kontakt> ;
+        dct:publisher      <http://example.org/Tolletaten> ;
+        skos:prefLabel     "Luftfartøy"@nb ;
+        skos:prefLabel     "Aircraft"@en ;
+        dct:identifier     <https://begrepskatalog.demo.fellesdatakatalog.digdir.no/555111097/f3274666-cce4-408f-ad2a-1569d242d141> .
+
+<http://example.org/Utførsel>
+        rdf:type           skos:Concept ;
+        skos:definition    "Dette er en definisjon"@nb ;
+        dcat:contactPoint  <http://example.org/Tolletaten_Kontakt> ;
+        dct:publisher      <http://example.org/Tolletaten> ;
+        skos:prefLabel     "Utførsel"@nb ;
+        dct:identifier     <https://begrepskatalog.demo.fellesdatakatalog.digdir.no/555111097/f3274666-cce4-408f-ad2a-1569d242d142> .
+
+<http://example.org/Vare>
+        rdf:type           skos:Concept ;
+        skos:definition    "Dette er en definisjon"@nb ;
+        dcat:contactPoint  <http://example.org/Tolletaten_Kontakt> ;
+        dct:publisher      <http://example.org/Tolletaten> ;
+        skos:prefLabel     "Vare"@nb ;
+        skos:prefLabel     "Vare"@nn ;
+        dct:identifier     <https://begrepskatalog.demo.fellesdatakatalog.digdir.no/555111097/f3274666-cce4-408f-ad2a-1569d242d143> .
+
+<http://example.org/Definisjon>
+        rdf:type            skos:Concept ;
+        skos:definition     "Dette er en definisjon"@nb ;
+        dcat:contactPoint   <http://example.org/Tolletaten_Kontakt> ;
+        dct:publisher       <http://example.org/Tolletaten> ;
+        skos:prefLabel      "Definisjon"@nb ;
+        euvoc:xIDefinition  <http://example.org/Tollkontroll_Def2> ;
+        dct:identifier      <https://begrepskatalog.demo.fellesdatakatalog.digdir.no/555111097/f3274666-cce4-408f-ad2a-1569d242d144> .
+
+<http://example.org/Tollkontroll_Def1>
+        rdf:type      euvoc:XlNote ;
+        dct:source    <http://example.org/EU> ;
+        rdf:value     "Dette er EU sin definisjon"@nb ;
+        dct:audience  <http://example.org/Tolletaten> .
+
+<http://example.org/Tollkontroll_Def2>
+        rdf:type      euvoc:XlNote ;
+        dct:source    <http://example.org/World> ;
+        rdf:value     "Definisjon"@nb ;
+        dct:audience  <http://example.org/Tolletaten> .
+
+<http://example.org/Tolletaten_Kontakt>
+        vcard:hasEmail             "postmottak@toll.no" ;
+        vcard:hasOrganizationName  "Tolletaten"@nb ;
+        vcard:hasOrganizationName  "Norwegian Customs Authority"@en ;
+        rdf:type                   vcard:Organization .
