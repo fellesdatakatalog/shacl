@@ -1,0 +1,1 @@
+# Hackathon project to validate data.norge.no turtle files with SHACL
