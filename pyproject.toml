@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "shacl"
+version = "0.1.0"
+description = "Hackathon project to validate data.norge.no turtle files with SHACL"
+authors = ["Magnus Bakken", "Terje Sylvarnes", "Veronica Heimsbakk", "Pål de Vibe", "Filip Hansen"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
