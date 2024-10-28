@@ -25,9 +25,6 @@
         rdf:type            skos:Concept ;
         skos:definition     "Dette er en definisjon"@nb ;
         dcat:contactPoint   <http://example.org/Tolletaten_Kontakt> ;
-        dct:publisher       <http://example.org/Tolletaten> ;
-        skos:prefLabel      "Kontroll av ulovlig inn- eller utførsel av varer"@nb ;
-        skos:prefLabel      "Kontroll av ulovleg inn- eller utføring av varer"@nn ;
         euvoc:xIDefinition  <http://example.org/Tollkontroll_Def1> ;
         dct:identifier      <https://begrepskatalog.demo.fellesdatakatalog.digdir.no/555111097/f3274666-cce4-408f-ad2a-1569d242d136> .
 
