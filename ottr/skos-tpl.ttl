@@ -1,0 +1,66 @@
+@prefix ottr: <http://ns.ottr.xyz/0.4/> .
+@prefix o-rdf: <http://tpl.ottr.xyz/rdf/0.1/> .
+@prefix o-rdfs: <http://tpl.ottr.xyz/rdfs/0.2/> .
+@prefix o-owl-dec: <http://tpl.ottr.xyz/owl/declaration/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cpsvno: <https://data.norge.no/vocabulary/cpsvno#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cv: <http://data.europa.eu/m8g/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix cpsv: <http://purl.org/vocab/cpsv#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix skosno: <http://data.norge.no/skosno#> .
+
+@prefix o-skosno: <https://data.norge.no/tpl/skosno#> .
+
+o-skosno:Concept [
+    ! ?uri ,
+    ! NEList<rdf:langString> ?prefLabel ,
+    ? NEList<rdf:langString> ?definition ,
+    ! NEList<xsd:anyURI> ?identifier ,
+    ! NEList<ottr:IRI> ?contactPoint ,
+    ! ?publisher ,
+    ? NEList<ottr:IRI> ?XlNote  
+] :: {
+    ottr:Triple(?uri, rdf:type, skos:Concept) ,
+    cross | ottr:Triple(?uri, skos:prefLabel, ++?prefLabel) ,
+    cross | ottr:Triple(?uri, skos:definition, ++?definition) ,
+    cross | ottr:Triple(?uri, dct:identifier, ++?identifier) ,
+    cross | ottr:Triple(?uri, dcat:contactPoint, ++?contactPoint) ,
+    ottr:Triple(?uri, dct:publisher, ?publisher) ,
+    cross | ottr:Triple(?uri, euvoc:xIDefinition, ++?XlNote) 
+} .
+
+
+o-skosno:Organization [
+    ! ?uri ,
+    ! NEList<rdf:langString> ?name ,
+    !  ?email 
+] :: {
+    ottr:Triple(?uri, rdf:type, vcard:Organization) ,
+    cross | ottr:Triple(?uri, vcard:hasOrganizationName, ++?name) ,
+    ottr:Triple(?uri, vcard:hasEmail, ?email) 
+} .
+
+o-skosno:XlNote [
+    ! ?uri ,
+    ! ?value ,
+    ? ottr:IRI ?relationshipWithSource ,
+    ? ottr:IRI ?source ,
+    ? ottr:IRI ?audience
+] :: {
+    ottr:Triple(?uri, rdf:type, euvoc:XlNote) ,
+    ottr:Triple(?uri, rdf:value, ?value) ,
+    ottr:Triple(?uri, skosno:relationshipWithSource, ?relationshipWithSource) ,
+    ottr:Triple(?uri, dct:source, ?source) ,
+    ottr:Triple(?uri, dct:audience, ?audience) 
+} .
