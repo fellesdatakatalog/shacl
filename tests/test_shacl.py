@@ -23,4 +23,5 @@ def test_validate_example():
         if violations_df.height > 0:
             print("\n__Example file validation failures:__ {}\n".format(violations_df.height), file=f)
             print(violations_df.to_pandas().to_markdown(index=False), file=f)
+            f.close()
             assert violations_df.height == 0
