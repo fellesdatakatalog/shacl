@@ -17,7 +17,7 @@ La oss ta `vcard:Organization` til eksempel fra data-organization.xlsx
 | 1     | 2                       | 3                     |
 | iri   | text+                   | auto                  |
 | URI   | NAME                    | EMAIL                 |
-| ex:Tolletaten | Tolletaten@@nb | Norwegian Customs Authority@@en | postmottak@toll.no |
+| ex:Tolletaten | Tolletaten@@nb &#124; Norwegian Customs Authority@@en | postmottak@toll.no |
 
 På toppen av hvert Excel-dokument er det deklarert ei liste med prefikser (som er strøket i dette markdown-eksempelet), så følger tabellen vi ser over.
 
