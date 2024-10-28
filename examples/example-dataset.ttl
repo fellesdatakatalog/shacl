@@ -67,3 +67,4 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         a                        ns1:Organization;
         ns1:hasEmail             <mailto:kollektivdata@entur.org>;
         ns1:hasOrganizationName  "Entur"@en .
+
