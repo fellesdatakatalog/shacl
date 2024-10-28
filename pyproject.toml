@@ -6,11 +6,10 @@ authors = ["Magnus Bakken", "Terje Sylvarnes", "Veronica Heimsbakk", "Pål de Vi
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.10,<3.11"
+python = "^3.11"
 pandas = "2.2.3"
 tabulate = "0.9.0"
-datacatalogtordf = "^3.0.0"
-
+maplib = { path = "dependencies/maplib-0.12.10-cp311-cp311-manylinux_2_34_x86_64.whl" }
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"
 
