@@ -1,0 +1,75 @@
+PREFIX adms: <http://www.w3.org/ns/adms#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX ns1:  <http://www.w3.org/2006/vcard/ns#>
+PREFIX adms: <http://www.w3.org/ns/adms#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX ns1:  <http://www.w3.org/2006/vcard/ns#>
+
+<https://stoppested.entur.org/>
+        a                  dcat:Dataset;
+        dct:accessRights   <http://publications.europa.eu/resource/authority/access-right/PUBLIC>;
+        dct:description    "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@nb , "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@en;
+        dct:publisher      <https://staging.fellesdatakatalog.digdir.no/organizations/210841962>;
+        dct:title          "Norsk stoppestedregister"@nb , "National Stop Registry"@en;
+        adms:sample        <https://stoppested.entur.org/example/>;
+        dcat:contactPoint  <https://stoppested.entur.org//.well-known/skolem/28b596d7-4746-375e-b28e-b3f35617f7e8>;
+        dcat:distribution  <https://stoppested.entur.org/gtfs_latest/>;
+        dcat:theme         <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
+
+<https://stoppested.entur.org/gtfs_latest/>
+        a                 dcat:Distribution;
+        dct:description   "Latest valid version of all current stops in Norway"@en;
+        dcat:accessURL    <https://developer.entur.org/stops-and-timetable-data>;
+        dcat:downloadURL  <https://storage.googleapis.com/marduk-production/tiamat/Current_latest-gtfs.zip> .
+
+<https://stoppested.entur.org//.well-known/skolem/28b596d7-4746-375e-b28e-b3f35617f7e8>
+        a                        ns1:Organization;
+        ns1:hasEmail             <mailto:kollektivdata@entur.org>;
+        ns1:hasOrganizationName  "Entur"@en .
+
+<https://stoppested.entur.org/>
+        a                  dcat:Dataset;
+        dct:accessRights   <http://publications.europa.eu/resource/authority/access-right/PUBLIC>;
+        dct:description    "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@en , "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@nb;
+        dct:publisher      <https://staging.fellesdatakatalog.digdir.no/organizations/210841962>;
+        dct:title          "Norsk stoppestedregister"@nb , "National Stop Registry"@en;
+        adms:sample        <https://stoppested.entur.org/example/>;
+        dcat:contactPoint  <https://developer.entur.org/stop-place/.well-known/skolem/28b596d7-4746-375e-b28e-b3f35617f7e8>;
+        dcat:distribution  <https://stoppested.entur.org/gtfs_latest/>;
+        dcat:theme         <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
+
+<https://stoppested.entur.org/gtfs_latest/>
+        a                 dcat:Distribution;
+        dcat:accessURL    <https://developer.entur.org/stops-and-timetable-data>;
+        dcat:downloadURL  <https://storage.googleapis.com/marduk-production/tiamat/Current_latest-gtfs.zip> .
+
+<https://developer.entur.org/stop-place>
+        a                         dcat:DataService;
+        dct:accessRights          <http://publications.europa.eu/resource/authority/access-right/PUBLIC>;
+        dct:description           "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@en;
+        dct:publisher             <https://staging.fellesdatakatalog.digdir.no/organizations/210841962>;
+        dct:title                 "Norsk stoppestedregister"@nb , "National Stop Registry"@en;
+        dcat:contactPoint         <https://developer.entur.org/stop-place/.well-known/skolem/28b596d7-4746-375e-b28e-b3f35617f7e8>;
+        dcat:endpointDescription  <https://developer.entur.org/stop-places-v1-read>;
+        dcat:endpointURL          <https://api.entur.io/stop-places/v1/read>;
+        dcat:keyword              "sanntid,rutetider,reiseplanlegging"@nb;
+        dcat:landingPage          <https://developer.entur.org/pages-nsr-nsr>;
+        dcat:mediaType            <https://www.iana.org/assignments/media-types/application/json>;
+        dcat:servesDataset        <https://stoppested.entur.org/>;
+        dcat:theme                <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
+
+<https://developer.entur.org/stops-and-timetable-data>
+        a                  dcat:Dataset;
+        dct:accessRights   <http://publications.europa.eu/resource/authority/access-right/PUBLIC>;
+        dct:description    "Part of our mission statement is to share our data with anyone who wants it, for free. This page lists all our timetables, and stop place data dumps which are updated daily. All data dumps have permanent URL's and come as NeTEx or GTFS datasets. NeTEx is the official format for public transport data in Norway and is the most complete in terms of available data. GTFS is a downstream format with only a limited subset of the total data, but we generate datasets for it anyway since GTFS can be easier to use and has a wider distribution among international public transport solutions. GTFS sets come in extended and basic versions."@en;
+        dct:publisher      <https://staging.fellesdatakatalog.digdir.no/organizations/210841962>;
+        dct:title          "Timetable data"@en;
+        dcat:contactPoint  <https://developer.entur.org/stop-place/.well-known/skolem/28b596d7-4746-375e-b28e-b3f35617f7e8>;
+        dcat:theme         <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
+
+<https://developer.entur.org/stop-place/.well-known/skolem/28b596d7-4746-375e-b28e-b3f35617f7e8>
+        a                        ns1:Organization;
+        ns1:hasEmail             <mailto:kollektivdata@entur.org>;
+        ns1:hasOrganizationName  "Entur"@en .
