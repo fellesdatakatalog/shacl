@@ -8,7 +8,6 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = ">=3.10,<3.11"
 pandas = "2.2.3"
-polars = "*"
 tabulate = "0.9.0"
 datacatalogtordf = "^3.0.0"
 
