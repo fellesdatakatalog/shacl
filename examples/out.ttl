@@ -124,3 +124,4 @@
         vcard:hasOrganizationName  "Tolletaten"@nb ;
         vcard:hasOrganizationName  "Norwegian Customs Authority"@en ;
         rdf:type                   vcard:Organization .
+
