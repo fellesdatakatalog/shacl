@@ -14,7 +14,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         dct:description    "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@nb , "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@en;
         #dct:publisher      <https://staging.fellesdatakatalog.digdir.no/organizations/210841962>;
         #dct:title          "Norsk stoppestedregister"@nb , "National Stop Registry"@en;
-        dct:identifier      "https://stoppested.entur.org/" ;
+        #dct:identifier      "https://stoppested.entur.org/" ;
         adms:sample        <https://stoppested.entur.org/example/>;
         dcat:contactPoint  <https://stoppested.entur.org//.well-known/skolem/28b596d7-4746-375e-b28e-b3f35617f7e8>;
         dcat:distribution  <https://stoppested.entur.org/gtfs_latest/>;
