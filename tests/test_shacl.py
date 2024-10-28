@@ -39,7 +39,7 @@ def test_validate_example():
             assert violations_df.height == 0
 
 
-def test_validate_example():
+def test_validate_skos_example():
     if "GITHUB_STEP_SUMMARY" in os.environ:
         f = open(os.environ["GITHUB_STEP_SUMMARY"], "a")
     else:
