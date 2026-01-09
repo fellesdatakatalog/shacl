@@ -1,5 +1,8 @@
 name: Validate SHACL with Pytest
 
+permissions:
+  contents: read
+  
 on:
   push:
     paths:
