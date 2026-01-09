@@ -1,5 +1,9 @@
 name: Build & deploy
 
+permissions:
+  contents: read
+  packages: write
+
 on:
   push:
     branches:
